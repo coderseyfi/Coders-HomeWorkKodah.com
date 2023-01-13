@@ -1,0 +1,82 @@
+#footer {
+    padding: 80px 0;
+
+    @include screen-md {
+        padding: 20px 0;
+    }
+
+    .container {
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            @include screen-md {
+                flex-direction: column;
+            }
+
+            .left {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    @include screen-md{
+                        text-align: center;
+                    }
+                    label {
+                        font-size: 22px;
+                        display: inline-block;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+
+                    input[type="email"] {
+                        padding: 15px 40px;
+                        border: none;
+                        background-color: #f1f1f1;
+                        outline: none;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                        @include screen-md{
+                            max-width: 500px;
+                            margin: 10px auto
+                        }
+                    }
+
+                    input[type="submit"] {
+                        @include forBtn();
+                        width: 160px;
+                        border: 2px solid;
+                        font-size: 23px;
+                        font-weight: 500;
+                        @include screen-md{
+                            max-width: 160px;
+                            margin: 0 auto
+                        }
+                        @include screen-md {
+                            margin-bottom: 20px;
+                            padding: 10px 30px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                @include screen-md {
+                    text-align: center;
+                }
+                i {
+                    font-size: 24px;
+                    padding-right: 15px;
+
+                    @include screen-md {
+                        font-size: 20px;
+
+                    }
+                }
+
+                i:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

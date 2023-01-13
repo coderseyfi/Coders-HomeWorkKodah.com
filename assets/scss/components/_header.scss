@@ -1,0 +1,65 @@
+#header{
+    position: -webkit-sticky;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $second-color;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .container{
+      
+        padding: 30px 20px;
+        .wrapper{
+            @include flexbox(center,space-between);
+            img{
+                width: 96px;
+            }
+            .list{
+              display: flex;
+              gap: 40px;
+              @include screen-md{
+                display: none;
+            }
+                &__item{
+                 font-size: 20px;
+                 a{
+                    color: $primary-color;
+                 }
+                }
+            }
+            .bar{
+                font-size: 30px;
+
+                @include screen-xl{
+                    display: none;
+                }
+                @include screen-md{
+                    display: block;
+                }
+            }
+        }
+    }
+    .for-phone-list{
+        display: none;
+        padding: 30px 20px;
+        text-align: right;
+        .list{
+            &__item{
+                margin-bottom: 15px;
+                a{
+                    font-size: 20px;
+                    color: $primary-color;
+                }
+               
+            }
+        }
+    }
+}
+
+.list-active{
+    display: block !important;
+}
+
+.line-active{
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}

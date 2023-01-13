@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, a, button, label, input {
+  font-family: "Josefin Slab", serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+#header {
+  position: -webkit-sticky;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#header .container {
+  padding: 30px 20px;
+}
+#header .container .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .container .wrapper img {
+  width: 96px;
+}
+#header .container .wrapper .list {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 991px) {
+  #header .container .wrapper .list {
+    display: none;
+  }
+}
+#header .container .wrapper .list__item {
+  font-size: 20px;
+}
+#header .container .wrapper .list__item a {
+  color: black;
+}
+#header .container .wrapper .bar {
+  font-size: 30px;
+}
+@media screen and (max-width: 1600px) {
+  #header .container .wrapper .bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  #header .container .wrapper .bar {
+    display: block;
+  }
+}
+#header .for-phone-list {
+  display: none;
+  padding: 30px 20px;
+  text-align: right;
+}
+#header .for-phone-list .list__item {
+  margin-bottom: 15px;
+}
+#header .for-phone-list .list__item a {
+  font-size: 20px;
+  color: black;
+}
+
+.list-active {
+  display: block !important;
+}
+
+.line-active {
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+}
+
+#footer {
+  padding: 80px 0;
+}
+@media screen and (max-width: 991px) {
+  #footer {
+    padding: 20px 0;
+  }
+}
+#footer .container .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper {
+    flex-direction: column;
+  }
+}
+#footer .container .wrapper .left form {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper .left form {
+    text-align: center;
+  }
+}
+#footer .container .wrapper .left form label {
+  font-size: 22px;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#footer .container .wrapper .left form input[type=email] {
+  padding: 15px 40px;
+  border: none;
+  background-color: #f1f1f1;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper .left form input[type=email] {
+    max-width: 500px;
+    margin: 10px auto;
+  }
+}
+#footer .container .wrapper .left form input[type=submit] {
+  padding: 15px 45px;
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  width: 160px;
+  border: 2px solid;
+  font-size: 23px;
+  font-weight: 500;
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper .left form input[type=submit] {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper .left form input[type=submit] {
+    margin-bottom: 20px;
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper .right {
+    text-align: center;
+  }
+}
+#footer .container .wrapper .right i {
+  font-size: 24px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 991px) {
+  #footer .container .wrapper .right i {
+    font-size: 20px;
+  }
+}
+#footer .container .wrapper .right i:last-child {
+  padding-right: 0;
+}
+
+#main {
+  margin-top: 120px;
+}
+#main .traveling .container .wrapper {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  #main .traveling .container .wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main .traveling .container .wrapper {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+#main .traveling .container .wrapper .left {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  #main .traveling .container .wrapper .left {
+    width: 95%;
+  }
+}
+#main .traveling .container .wrapper .left img {
+  width: 100%;
+}
+#main .traveling .container .wrapper .right {
+  width: 49%;
+}
+@media screen and (max-width: 767px) {
+  #main .traveling .container .wrapper .right {
+    width: 95%;
+  }
+}
+#main .traveling .container .wrapper .right .head {
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+#main .traveling .container .wrapper .right .story {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+#main .traveling .container .wrapper .right .text {
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: justify;
+}
+#main .most {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #main .most .container {
+    padding: 0 10px;
+  }
+}
+#main .most .container h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+@media screen and (max-width: 991px) {
+  #main .most .container h1 {
+    font-size: 30px;
+  }
+}
+#main .most .container .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 991px) {
+  #main .most .container .wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+#main .most .container .wrapper .card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#main .most .container .wrapper .card h6 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#main .most .container .wrapper .card p {
+  font-size: 16px;
+}
+#main .most .container .wrapper .card .slug {
+  margin-bottom: 10px;
+}
+#main .most .container .btn-box {
+  text-align: center;
+}
+#main .most .container .btn-box .btn {
+  padding: 15px 45px;
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+#main .pictures {
+  margin-bottom: 140px;
+}
+@media screen and (max-width: 991px) {
+  #main .pictures {
+    margin-bottom: 30px;
+  }
+}
+#main .pictures .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  #main .pictures .container .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  #main .pictures .container .wrapper .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#main .pictures .container .wrapper .box img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
